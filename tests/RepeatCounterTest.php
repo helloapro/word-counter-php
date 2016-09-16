@@ -57,5 +57,16 @@
 
             $this->assertEquals(2, $result);
         }
+
+        function test_countRepeats_punctuation()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_text = 'The cat plays with another cat.';
+            $input_word = 'cat';
+
+            $result = $test_RepeatCounter->countRepeats($input_text, $input_word);
+
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
