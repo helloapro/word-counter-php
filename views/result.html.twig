@@ -12,7 +12,13 @@
             {% if word is not empty and text is not empty %}
                 <h4>You searched for "{{ word }}" in:</h4>
                 <p>"{{ text }}"</p>
-                <h4>We found {{ result }} matches.</h4>
+                <h4>We found {{ result }}
+                    {% if result == 1 %}
+                        match.
+                    {% else %}
+                        matches.
+                    {% endif %}
+                </h4>
             {% else %}
                 <h4>Please go back and complete both fields before submitting.</h4>
             {% endif %}
