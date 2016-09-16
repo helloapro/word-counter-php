@@ -43,6 +43,11 @@ This application is a tool that counts the frequency of a word in a given string
     * Example output: 2
     * Description: Both strings will be completely lower-cased prior to searching to ensure all matches are found.
 
+* It matches words regardless of punctuation
+    * Example input: The cat plays with another cat. & cat
+    * Example output: 2
+    * Description: While looping through words, search and remove any punctuation from words prior to comparing to search term.
+
 ## Known Bugs ##
 
 There are no known bugs at this time.
