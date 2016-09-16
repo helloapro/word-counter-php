@@ -12,9 +12,10 @@
 
     $app->get('/result', function() use ($app) {
         $new_counter = new RepeatCounter;
+        $text = $_GET['text'];
         $word = $_GET['word'];
-        $result = $new_counter->countRepeats($_GET['text'], $word);
-        return $app['twig']->render('result.html.twig', array('result' => $result, 'word' => $word));
+        $result = $new_counter->countRepeats($text, $word);
+        return $app['twig']->render('result.html.twig', array('result' => $result, 'text' => $text, 'word' => $word));
     });
 
     return $app;
