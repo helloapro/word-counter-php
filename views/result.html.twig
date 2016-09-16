@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href='assets/css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/styles.css' rel='stylesheet' type='text/css'>
     <title>Word Counter</title>
 </head>
 <body>
     <h1>Word Counter</h1>
-    <p>You searched for "{{ word }}".</p>
-    <p>We found {{ result }} matches.</p>
+    <h4>You searched for "{{ word }}" in:</h4>
+    <p>{{ text }}</p>
+    <h4>We found {{ result }} matches.</h4>
     <form action='/'>
         <button type='submit' class='btn btn-info'>Search Again</button>
     </form>
