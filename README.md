@@ -1,6 +1,6 @@
 # Word Counter #
 
-#### An application to practice BDD in PHP, September 9th, 2016
+#### An application to practice BDD in PHP, September 16th, 2016
 
 #### By Mark Lawson
 
