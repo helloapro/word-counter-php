@@ -3,6 +3,8 @@
 <head>
     <link href='assets/css/bootstrap.css' rel='stylesheet' type='text/css'>
     <link href='assets/css/styles.css' rel='stylesheet' type='text/css'>
+    <script src='assets/js/jquery-3.1.0.min.js'></script>
+    <script src='assets/js/scripts.js'></script>
     <title>Word Counter</title>
 </head>
 <body>
@@ -10,8 +12,8 @@
         <div class='well'>
             <h1>Word Counter</h1>
             {% if word is not empty and text is not empty %}
-                <h4>You searched for "{{ word }}" in:</h4>
-                <p>"{{ text }}"</p>
+                <h4>You searched for "<span id='word'>{{ word }}</span>" in:</h4>
+                <p>"<span id='text'>{{ text }}</span>"</p>
                 <h4>We found {{ result }}
                     {% if result == 1 %}
                         match.
