@@ -6,12 +6,20 @@
     <title>Word Counter</title>
 </head>
 <body>
-    <h1>Word Counter</h1>
-    <h4>You searched for "{{ word }}" in:</h4>
-    <p>{{ text }}</p>
-    <h4>We found {{ result }} matches.</h4>
-    <form action='/'>
-        <button type='submit' class='btn btn-info'>Search Again</button>
-    </form>
+    <div class='container'>
+        <div class='well'>
+            <h1>Word Counter</h1>
+            {% if word is not empty and text is not empty %}
+                <h4>You searched for "{{ word }}" in:</h4>
+                <p>"{{ text }}"</p>
+                <h4>We found {{ result }} matches.</h4>
+            {% else %}
+                <h4>Please go back and complete both fields before submitting.</h4>
+            {% endif %}
+            <form action='/'>
+                <button type='submit' class='btn btn-warning'>Search Again</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
