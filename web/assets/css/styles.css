@@ -3,6 +3,7 @@ body {
     background: url('../img/books.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-size: 1.6em;
 }
 
 h1 {
@@ -15,7 +16,7 @@ form * {
 }
 
 p {
-    padding: 0 25px;
+    padding: 10px 25px;
 }
 
 .well {
