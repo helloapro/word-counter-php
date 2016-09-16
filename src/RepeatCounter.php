@@ -5,8 +5,12 @@
         {
             $output = 0;
 
-            if ($input_text == $input_word) {
-                $output = 1;
+            $input_array = explode(" ", $input_text);
+
+            foreach ($input_array as $word) {
+                if ($word == $input_word) {
+                    $output = 1;
+                }
             }
 
             return $output;
