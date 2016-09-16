@@ -62,6 +62,7 @@ Please report any bugs or issues to mlawson3691@gmail.com.
 * Silex
 * Twig
 * Bootstrap
+* jQuery
 
 ### License ###
 
