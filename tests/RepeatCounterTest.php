@@ -24,5 +24,16 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_find()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_text = 'the cat is cute';
+            $input_word = 'cat';
+
+            $result = $test_RepeatCounter->countRepeats($input_text, $input_word);
+
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
