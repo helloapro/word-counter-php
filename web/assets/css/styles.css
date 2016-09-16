@@ -1,0 +1,37 @@
+body {
+    font-family: monospace;
+    background: url('../img/books.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+form * {
+    margin-top: 15px;
+}
+
+p {
+    padding: 0 25px;
+}
+
+.well {
+    width: 70%;
+    margin: 15%;
+    padding: 50px 30px;
+    border-radius: 25px;
+    opacity: 0.9;
+    background: white;
+    border-color: #A22B25;
+}
+
+.btn-danger {
+    background: #D73B2F;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+}
