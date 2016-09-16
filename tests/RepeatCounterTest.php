@@ -35,5 +35,16 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_multiples()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $input_text = 'the cat plays with the ball';
+            $input_word = 'the';
+
+            $result = $test_RepeatCounter->countRepeats($input_text, $input_word);
+
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
